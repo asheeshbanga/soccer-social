@@ -72,6 +72,9 @@
                                     <constraint firstAttribute="height" constant="150" id="pAe-c0-0Nx"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W4t-qY-AOG"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qiH-EH-cHX">
                                 <rect key="frame" x="46" y="420" width="283" height="127"/>
@@ -86,7 +89,7 @@
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                         <color key="textColor" red="0.21960784310000001" green="0.32156862749999998" blue="0.60392156860000001" alpha="0.87" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-ob-3NG" customClass="RectBtn" customModule="Soccer_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="283" height="37"/>
@@ -95,6 +98,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKt-DX-Sdk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -118,10 +124,51 @@
                             <constraint firstItem="qiH-EH-cHX" firstAttribute="top" secondItem="q5K-nG-Qf7" secondAttribute="bottom" constant="40" id="sd7-OD-yZb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="2Wz-mS-pxl" id="ynF-y6-Yi1"/>
+                        <outlet property="pwdField" destination="Vko-4f-KsV" id="U9t-aB-m3W"/>
+                        <segue destination="Jee-ZW-Zo3" kind="show" identifier="goToFeed" id="MA3-30-Bgt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="-682" y="118"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="iEh-yM-IUw">
+            <objects>
+                <viewController id="Jee-ZW-Zo3" customClass="FeedVC" customModule="Soccer_Social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TPV-9M-3qY"/>
+                        <viewControllerLayoutGuide type="bottom" id="rdb-ql-lAV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Uj-px-tQe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9x-ua-Rec">
+                                <rect key="frame" x="157" y="318" width="60" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="Jee-ZW-Zo3" eventType="touchUpInside" id="lzj-g5-6k4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="V9x-ua-Rec" firstAttribute="centerX" secondItem="0Uj-px-tQe" secondAttribute="centerX" id="BbO-f8-igh"/>
+                            <constraint firstItem="V9x-ua-Rec" firstAttribute="centerY" secondItem="0Uj-px-tQe" secondAttribute="centerY" id="RaT-v1-Wtb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="e0S-2Y-YPx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssX-QJ-0xX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="117"/>
         </scene>
     </scenes>
     <resources>

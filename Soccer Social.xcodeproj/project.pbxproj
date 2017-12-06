@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0FD31AAA0F53027CC352DD5D /* Pods_Soccer_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA93C9FA26BE71A925695D9B /* Pods_Soccer_Social.framework */; };
+		4802D4641FCFD2280051EECD /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D4631FCFD2280051EECD /* FeedVC.swift */; };
 		482CA5C01FC3E30300A97CD3 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482CA5BF1FC3E30300A97CD3 /* RoundBtn.swift */; };
 		482CA5C21FC3E5A800A97CD3 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482CA5C11FC3E5A800A97CD3 /* FancyField.swift */; };
 		482CA5C41FC3E6AA00A97CD3 /* RectBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482CA5C31FC3E6AA00A97CD3 /* RectBtn.swift */; };
+		4864B6D31FCFEE400016A3F1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4864B6CF1FCFEE400016A3F1 /* Bolts.framework */; };
+		4864B6D41FCFEE400016A3F1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4864B6D01FCFEE400016A3F1 /* FBSDKCoreKit.framework */; };
+		4864B6D51FCFEE400016A3F1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4864B6D11FCFEE400016A3F1 /* FBSDKLoginKit.framework */; };
 		486A15B81FBC149300446E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A15B71FBC149300446E05 /* AppDelegate.swift */; };
 		486A15BA1FBC149300446E05 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A15B91FBC149300446E05 /* SignInVC.swift */; };
 		486A15BD1FBC149300446E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486A15BB1FBC149300446E05 /* Main.storyboard */; };
@@ -22,9 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4802D4631FCFD2280051EECD /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		482CA5BF1FC3E30300A97CD3 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		482CA5C11FC3E5A800A97CD3 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		482CA5C31FC3E6AA00A97CD3 /* RectBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectBtn.swift; sourceTree = "<group>"; };
+		4864B6CC1FCFEB3C0016A3F1 /* Soccer Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Soccer Social.entitlements"; sourceTree = "<group>"; };
+		4864B6CF1FCFEE400016A3F1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../FacebookSDKs-iOS-4.28.0/Bolts.framework"; sourceTree = "<group>"; };
+		4864B6D01FCFEE400016A3F1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../FacebookSDKs-iOS-4.28.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		4864B6D11FCFEE400016A3F1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../FacebookSDKs-iOS-4.28.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		486A15B41FBC149300446E05 /* Soccer Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Soccer Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		486A15B71FBC149300446E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486A15B91FBC149300446E05 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -46,6 +55,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD31AAA0F53027CC352DD5D /* Pods_Soccer_Social.framework in Frameworks */,
+				4864B6D41FCFEE400016A3F1 /* FBSDKCoreKit.framework in Frameworks */,
+				4864B6D51FCFEE400016A3F1 /* FBSDKLoginKit.framework in Frameworks */,
+				4864B6D31FCFEE400016A3F1 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				486A15B91FBC149300446E05 /* SignInVC.swift */,
+				4802D4631FCFD2280051EECD /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 		486A15B61FBC149300446E05 /* Soccer Social */ = {
 			isa = PBXGroup;
 			children = (
+				4864B6CC1FCFEB3C0016A3F1 /* Soccer Social.entitlements */,
 				48C0C1091FC00C0D00A5C395 /* Util */,
 				4818E8E61FBC184300384AA6 /* Model */,
 				4818E8E81FBC184B00384AA6 /* Controller */,
@@ -124,6 +138,9 @@
 		8199FF263E69F9DCFF25B121 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4864B6CF1FCFEE400016A3F1 /* Bolts.framework */,
+				4864B6D01FCFEE400016A3F1 /* FBSDKCoreKit.framework */,
+				4864B6D11FCFEE400016A3F1 /* FBSDKLoginKit.framework */,
 				AA93C9FA26BE71A925695D9B /* Pods_Soccer_Social.framework */,
 			);
 			name = Frameworks;
@@ -175,6 +192,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L829UZTQ3K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -267,6 +289,7 @@
 				486A15BA1FBC149300446E05 /* SignInVC.swift in Sources */,
 				482CA5C01FC3E30300A97CD3 /* RoundBtn.swift in Sources */,
 				482CA5C41FC3E6AA00A97CD3 /* RectBtn.swift in Sources */,
+				4802D4641FCFD2280051EECD /* FeedVC.swift in Sources */,
 				48C0C1081FC00BA800A5C395 /* TopView.swift in Sources */,
 				486A15B81FBC149300446E05 /* AppDelegate.swift in Sources */,
 				48C0C10B1FC00C2400A5C395 /* Constants.swift in Sources */,
@@ -394,6 +417,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L829UZTQ3K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SwiftKeychainWrapper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/leveldb-library\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+				);
 				INFOPLIST_FILE = "Soccer Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asheeshbanga.Soccer-Social";
@@ -408,6 +448,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L829UZTQ3K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Bolts\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKCoreKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FBSDKLoginKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GTMSessionFetcher\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GoogleToolboxForMac\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SwiftKeychainWrapper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/leveldb-library\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+				);
 				INFOPLIST_FILE = "Soccer Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asheeshbanga.Soccer-Social";
